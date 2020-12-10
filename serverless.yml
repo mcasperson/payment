@@ -1,0 +1,16 @@
+service: payment
+provider:
+  name: aws
+  runtime: go1.x
+  timeout: 60
+package:
+  exclude:
+    - ./**
+  include:
+    - ./paymentsvc
+functions:
+  cart:
+    handler: paymentsvc
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
