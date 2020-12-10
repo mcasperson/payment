@@ -9,7 +9,7 @@ package:
   include:
     - ./paymentsvc
 functions:
-  cart:
+  payment:
     handler: paymentsvc
     events:
       - http: ANY /
