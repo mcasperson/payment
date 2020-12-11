@@ -46,6 +46,9 @@ jobs:
         go get -u github.com/mattn/goveralls
         go get -u github.com/FiloSottile/gvt
         gvt restore
+        go get -u github.com/aws/aws-lambda-go/events
+        go get -u github.com/aws/aws-lambda-go/lambda
+        go get -u github.com/awslabs/aws-lambda-go-api-proxy/httpadapter
 
     #
     #
