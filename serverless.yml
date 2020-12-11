@@ -7,10 +7,10 @@ package:
   exclude:
     - ./**
   include:
-    - ./paymentsvc
+    - ./main
 functions:
   payment:
-    handler: paymentsvc
+    handler: main
     events:
       - http: ANY /
       - http: 'ANY {proxy+}'
